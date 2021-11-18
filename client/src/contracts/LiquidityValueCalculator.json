@@ -60,13 +60,13 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.6+commit.6c089d02\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"factory_\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"}],\"name\":\"computeLiquidityShareValue\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenAAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"tokenBAmount\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"factory\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/LiquidityValueCalculator.sol\":\"LiquidityValueCalculator\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol\":{\"keccak256\":\"0x7c9bc70e5996c763e02ff38905282bc24fb242b0ef2519a003b36824fc524a4b\",\"urls\":[\"bzz-raw://85d5ad2dd23ee127f40907a12865a1e8cb5828814f6f2480285e1827dd72dedf\",\"dweb:/ipfs/QmayKQWJgWmr46DqWseADyUanmqxh662hPNdAkdHRjiQQH\"]},\"@uniswap/v2-periphery/contracts/libraries/SafeMath.sol\":{\"keccak256\":\"0x27f0ea82f879b3b01387b583e6d9d0ec858dca3b22b0aad173f8fbda06e761e1\",\"urls\":[\"bzz-raw://0db9cf37793eb7035f0bfced36323d240f0212150009c39a3a108701d9b50b6c\",\"dweb:/ipfs/QmUAdiG9XNcieXkKfiMB49zQqD34FbXFE15csV2KQzwEqg\"]},\"@uniswap/v2-periphery/contracts/libraries/UniswapV2Library.sol\":{\"keccak256\":\"0x2e125bac8733dde3c937e4245f15dcd56633a1aecf5d7760ba2018e9e374f378\",\"urls\":[\"bzz-raw://f66af240fea54958cc87dc5dadc1fd36531d06666adf32330a0c78b8a1c6dea8\",\"dweb:/ipfs/QmU7Sg5LEkuCVqFNpMBt1Txpfv3ucG3H4QBaMVqtL5bYMp\"]},\"project:/contracts/LiquidityValueCalculator.sol\":{\"keccak256\":\"0x7ffa0be293ef69e7a871e99a074712571ff8fbfd5487ccbcba0c49d2708e49fa\",\"urls\":[\"bzz-raw://e6ab481c6c067d967d5c16ed8136d5b7d6854d2a4acf76af642d829c468a640a\",\"dweb:/ipfs/QmcbjKUdB9i4txk8YW3hiYXn6LY6oYN4NumCi95BnjKSsj\"]},\"project:/contracts/interfaces/ILiquidityValueCalculator.sol\":{\"keccak256\":\"0x6c2f8ab224ef45da6ada17336d785ebd326c20806d95104a0f147f6f3bfa2356\",\"urls\":[\"bzz-raw://f4f2efb07dc87c537c4e52d1ab378ca8ddc4ab7b277eb6aa338082b149b8def3\",\"dweb:/ipfs/QmQZTkwjuVryeNBPnWPwP3jf8obrdhxVLWJ8P5P3KvF3Zz\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b5060405161026e38038061026e8339818101604052602081101561003357600080fd5b8101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550506101da806100946000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c80634ef0c6cc1461003b578063c45a0155146100c4575b600080fd5b6100a76004803603606081101561005157600080fd5b8101908080359060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061010e565b604051808381526020018281526020019250505060405180910390f35b6100cc61017f565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000806040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260048152602001807f544f444f0000000000000000000000000000000000000000000000000000000081525060200191505060405180910390fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea2646970667358221220f45e16948b9fdb1d4db87e920559ca0a695cf7c6e85e176b789280daa70a5e1864736f6c63430006060033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c80634ef0c6cc1461003b578063c45a0155146100c4575b600080fd5b6100a76004803603606081101561005157600080fd5b8101908080359060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061010e565b604051808381526020018281526020019250505060405180910390f35b6100cc61017f565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000806040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260048152602001807f544f444f0000000000000000000000000000000000000000000000000000000081525060200191505060405180910390fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea2646970667358221220f45e16948b9fdb1d4db87e920559ca0a695cf7c6e85e176b789280daa70a5e1864736f6c63430006060033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.6+commit.6c089d02\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"factory_\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"liquidity\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"}],\"name\":\"computeLiquidityShareValue\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenAAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"tokenBAmount\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"factory\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/LiquidityValueCalculator.sol\":\"LiquidityValueCalculator\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol\":{\"keccak256\":\"0x7c9bc70e5996c763e02ff38905282bc24fb242b0ef2519a003b36824fc524a4b\",\"urls\":[\"bzz-raw://85d5ad2dd23ee127f40907a12865a1e8cb5828814f6f2480285e1827dd72dedf\",\"dweb:/ipfs/QmayKQWJgWmr46DqWseADyUanmqxh662hPNdAkdHRjiQQH\"]},\"@uniswap/v2-periphery/contracts/libraries/SafeMath.sol\":{\"keccak256\":\"0x27f0ea82f879b3b01387b583e6d9d0ec858dca3b22b0aad173f8fbda06e761e1\",\"urls\":[\"bzz-raw://0db9cf37793eb7035f0bfced36323d240f0212150009c39a3a108701d9b50b6c\",\"dweb:/ipfs/QmUAdiG9XNcieXkKfiMB49zQqD34FbXFE15csV2KQzwEqg\"]},\"@uniswap/v2-periphery/contracts/libraries/UniswapV2Library.sol\":{\"keccak256\":\"0x2e125bac8733dde3c937e4245f15dcd56633a1aecf5d7760ba2018e9e374f378\",\"urls\":[\"bzz-raw://f66af240fea54958cc87dc5dadc1fd36531d06666adf32330a0c78b8a1c6dea8\",\"dweb:/ipfs/QmU7Sg5LEkuCVqFNpMBt1Txpfv3ucG3H4QBaMVqtL5bYMp\"]},\"project:/contracts/LiquidityValueCalculator.sol\":{\"keccak256\":\"0x717a10eedfc3dc12f2b3d6eb62ecc0bddbbf00829a5441cf92dd26a780123d7b\",\"urls\":[\"bzz-raw://8af8c6b2a88e73a6dd6d15e7abc5183800a3eba232fd8f29b8d312af1543712f\",\"dweb:/ipfs/QmQef5R85LccVWo6sSy8X1gnUfCbW5m8a6ZiHhZ75H9yKn\"]},\"project:/contracts/interfaces/ILiquidityValueCalculator.sol\":{\"keccak256\":\"0x6c2f8ab224ef45da6ada17336d785ebd326c20806d95104a0f147f6f3bfa2356\",\"urls\":[\"bzz-raw://f4f2efb07dc87c537c4e52d1ab378ca8ddc4ab7b277eb6aa338082b149b8def3\",\"dweb:/ipfs/QmQZTkwjuVryeNBPnWPwP3jf8obrdhxVLWJ8P5P3KvF3Zz\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060405161026e38038061026e8339818101604052602081101561003357600080fd5b8101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550506101da806100946000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c80634ef0c6cc1461003b578063c45a0155146100c4575b600080fd5b6100a76004803603606081101561005157600080fd5b8101908080359060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061010e565b604051808381526020018281526020019250505060405180910390f35b6100cc61017f565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000806040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260048152602001807f544f444f0000000000000000000000000000000000000000000000000000000081525060200191505060405180910390fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea26469706673582212207ed58fe6e0d19f72b1658bad2d537450fd1a0f0c8da353834796c1c9b65a574d64736f6c63430006060033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c80634ef0c6cc1461003b578063c45a0155146100c4575b600080fd5b6100a76004803603606081101561005157600080fd5b8101908080359060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061010e565b604051808381526020018281526020019250505060405180910390f35b6100cc61017f565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000806040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260048152602001807f544f444f0000000000000000000000000000000000000000000000000000000081525060200191505060405180910390fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea26469706673582212207ed58fe6e0d19f72b1658bad2d537450fd1a0f0c8da353834796c1c9b65a574d64736f6c63430006060033",
   "immutableReferences": {},
-  "sourceMap": "220:767:3:-:0;;;314:66;5:9:-1;2:2;;;27:1;24;17:12;2:2;314:66:3;;;;;;;;;;;;;;;15:2:-1;10:3;7:11;4:2;;;31:1;28;21:12;4:2;314:66:3;;;;;;;;;;;;;;;;367:8;357:7;;:18;;;;;;;;;;;;;;;;;;314:66;220:767;;;;;;",
-  "deployedSourceMap": "220:767:3:-:0;;;;5:9:-1;2:2;;;27:1;24;17:12;2:2;220:767:3;;;;;;;;;;;;;;;;;;;;;12:1:-1;9;2:12;809:176:3;;;;;;15:2:-1;10:3;7:11;4:2;;;31:1;28;21:12;4:2;809:176:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;287:22;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;809:176;920:17;939;966:14;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;287:22;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity ^0.6.6;\n\nimport '@uniswap/v2-periphery/contracts/libraries/UniswapV2Library.sol';\nimport '@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol';\n\nimport \"./interfaces/ILiquidityValueCalculator.sol\";\n\ncontract LiquidityValueCalculator is ILiquidityValueCalculator {\n  address public factory;\n\n  constructor(address factory_) public {\n    factory = factory_;\n  }\n\n  function pairInfo(address tokenA, address tokenB) internal view returns (uint reserveA, uint reserveB, uint totalSupply) {\n    IUniswapV2Pair pair = IUniswapV2Pair(UniswapV2Library.pairFor(factory, tokenA, tokenB));\n\n    totalSupply = pair.totalSupply();\n    (uint reserves0, uint reserves1, ) = pair.getReserves();\n    (reserveA, reserveB) = tokenA == pair.token0() ? (reserves0, reserves1) : (reserves1, reserves0);\n  }\n\n  function computeLiquidityShareValue(uint liquidity, address tokenA, address tokenB) external override returns (uint tokenAAmount, uint tokenBAmount) {\n      revert('TODO');\n  }\n}",
+  "sourceMap": "220:765:3:-:0;;;314:66;5:9:-1;2:2;;;27:1;24;17:12;2:2;314:66:3;;;;;;;;;;;;;;;15:2:-1;10:3;7:11;4:2;;;31:1;28;21:12;4:2;314:66:3;;;;;;;;;;;;;;;;367:8;357:7;;:18;;;;;;;;;;;;;;;;;;314:66;220:765;;;;;;",
+  "deployedSourceMap": "220:765:3:-:0;;;;5:9:-1;2:2;;;27:1;24;17:12;2:2;220:765:3;;;;;;;;;;;;;;;;;;;;;12:1:-1;9;2:12;809:174:3;;;;;;15:2:-1;10:3;7:11;4:2;;;31:1;28;21:12;4:2;809:174:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;287:22;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;809:174;920:17;939;964:14;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;287:22;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.6.6;\n\nimport '@uniswap/v2-periphery/contracts/libraries/UniswapV2Library.sol';\nimport '@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol';\n\nimport \"./interfaces/ILiquidityValueCalculator.sol\";\n\ncontract LiquidityValueCalculator is ILiquidityValueCalculator {\n  address public factory;\n\n  constructor(address factory_) public {\n    factory = factory_;\n  }\n\n  function pairInfo(address tokenA, address tokenB) internal view returns (uint reserveA, uint reserveB, uint totalSupply) {\n    IUniswapV2Pair pair = IUniswapV2Pair(UniswapV2Library.pairFor(factory, tokenA, tokenB));\n\n    totalSupply = pair.totalSupply();\n    (uint reserves0, uint reserves1, ) = pair.getReserves();\n    (reserveA, reserveB) = tokenA == pair.token0() ? (reserves0, reserves1) : (reserves1, reserves0);\n  }\n\n  function computeLiquidityShareValue(uint liquidity, address tokenA, address tokenB) external override returns (uint tokenAAmount, uint tokenBAmount) {\n    revert('TODO');\n  }\n}",
   "sourcePath": "/Users/nrjshka/Documents/Development/Projects/smartcontracts/priceWatcher/contracts/LiquidityValueCalculator.sol",
   "ast": {
     "absolutePath": "project:/contracts/LiquidityValueCalculator.sol",
@@ -1098,7 +1098,7 @@
             "body": {
               "id": 881,
               "nodeType": "Block",
-              "src": "958:27:3",
+              "src": "958:25:3",
               "statements": [
                 {
                   "expression": {
@@ -1114,7 +1114,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "973:6:3",
+                        "src": "971:6:3",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_ff5c818c3a09617e24e0ba5e97a8b336e42589e94d6f586a74a28d768ee2c8cb",
@@ -1138,7 +1138,7 @@
                         -19
                       ],
                       "referencedDeclaration": -19,
-                      "src": "966:6:3",
+                      "src": "964:6:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_revert_pure$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (string memory) pure"
@@ -1152,7 +1152,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "966:14:3",
+                    "src": "964:14:3",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
@@ -1161,7 +1161,7 @@
                   },
                   "id": 880,
                   "nodeType": "ExpressionStatement",
-                  "src": "966:14:3"
+                  "src": "964:14:3"
                 }
               ]
             },
@@ -1336,17 +1336,17 @@
               "src": "919:38:3"
             },
             "scope": 883,
-            "src": "809:176:3",
+            "src": "809:174:3",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
         "scope": 884,
-        "src": "220:767:3"
+        "src": "220:765:3"
       }
     ],
-    "src": "0:987:3"
+    "src": "0:985:3"
   },
   "legacyAST": {
     "attributes": {
@@ -2691,7 +2691,7 @@
                             },
                             "id": 877,
                             "name": "Identifier",
-                            "src": "966:6:3"
+                            "src": "964:6:3"
                           },
                           {
                             "attributes": {
@@ -2708,37 +2708,37 @@
                             },
                             "id": 878,
                             "name": "Literal",
-                            "src": "973:6:3"
+                            "src": "971:6:3"
                           }
                         ],
                         "id": 879,
                         "name": "FunctionCall",
-                        "src": "966:14:3"
+                        "src": "964:14:3"
                       }
                     ],
                     "id": 880,
                     "name": "ExpressionStatement",
-                    "src": "966:14:3"
+                    "src": "964:14:3"
                   }
                 ],
                 "id": 881,
                 "name": "Block",
-                "src": "958:27:3"
+                "src": "958:25:3"
               }
             ],
             "id": 882,
             "name": "FunctionDefinition",
-            "src": "809:176:3"
+            "src": "809:174:3"
           }
         ],
         "id": 883,
         "name": "ContractDefinition",
-        "src": "220:767:3"
+        "src": "220:765:3"
       }
     ],
     "id": 884,
     "name": "SourceUnit",
-    "src": "0:987:3"
+    "src": "0:985:3"
   },
   "compiler": {
     "name": "solc",
@@ -2746,7 +2746,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-11-18T21:09:40.239Z",
+  "updatedAt": "2021-11-18T21:45:25.222Z",
   "devdoc": {
     "methods": {}
   },
