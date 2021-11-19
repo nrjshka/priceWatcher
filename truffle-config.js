@@ -1,4 +1,5 @@
 const path = require("path");
+
 require('dotenv').config() ;
 
 /**
@@ -21,10 +22,9 @@ require('dotenv').config() ;
  *
  */
 
-// const HDWalletProvider = require('@truffle/hdwallet-provider');
+const HDWalletProvider = require('@truffle/hdwallet-provider');
 //
-const fs = require('fs');
-const mnemonic = fs.readFileSync(".secret").toString().trim();
+const mnemonic = process.env.MNENOMIC;
 
 module.exports = {
   contracts_build_directory: path.join(__dirname, "client/src/contracts"),
