@@ -11,10 +11,11 @@
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
+    "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
     "semi": 0,
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
     "prettier/prettier": [
       "error", {
         "semi": false
@@ -23,9 +24,18 @@
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["error"]
   },
+  "mport/extensions": [
+    "error",
+    "ignorePackages",
+    {
+      "ts": "never",
+      "tsx": "never"
+    }
+  ],
   "settings": {
     "import/resolver": {
       "node": {
+        "typescript": {},
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     }
