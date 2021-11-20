@@ -5,13 +5,13 @@
       "inputs": [
         {
           "internalType": "address",
-          "name": "pairAddress",
+          "name": "tokenA",
           "type": "address"
         },
         {
-          "internalType": "uint256",
-          "name": "amount",
-          "type": "uint256"
+          "internalType": "address",
+          "name": "tokenB",
+          "type": "address"
         }
       ],
       "name": "getPriceOfToken",
@@ -26,26 +26,26 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.6+commit.6c089d02\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"pairAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"getPriceOfToken\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/ILiquidityValueCalculator.sol\":\"ILiquidityValueCalculator\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/ILiquidityValueCalculator.sol\":{\"keccak256\":\"0x3f3cfd3dd52c95fb8cd8b818906963f5b2ed8364d86341f281cdc408c9c7033e\",\"urls\":[\"bzz-raw://da8a863bc2299dab90f9412766e0ba2bb27ec529f7edad871f18fba3d06e9aa5\",\"dweb:/ipfs/QmXEq4FQihAGbJpBmtbWwFZnxyXB4G2hPZWNqqfkqY7iW6\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.6+commit.6c089d02\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"}],\"name\":\"getPriceOfToken\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/ILiquidityValueCalculator.sol\":\"ILiquidityValueCalculator\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/ILiquidityValueCalculator.sol\":{\"keccak256\":\"0xcfe9a678f343abbf64a643fbb06aa5007f4b779f42a1d8475379a00de7e96e77\",\"urls\":[\"bzz-raw://abfce9e6187895c971263c95dccb92652f1d06e85f6457e78ba3db7047762c1f\",\"dweb:/ipfs/QmYJGtrPHBxThaaoq6G1Q3bebh732txSCQqbusFvB1j2Mb\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity ^0.6.6;\n\ninterface ILiquidityValueCalculator {\n  function getPriceOfToken(address pairAddress, uint amount) external view returns(uint);\n}",
+  "source": "pragma solidity ^0.6.6;\n\ninterface ILiquidityValueCalculator {\n  function getPriceOfToken(address tokenA, address tokenB) external view returns(uint);\n}",
   "sourcePath": "/Users/nrjshka/Documents/Development/Projects/smartcontracts/priceWatcher/contracts/interfaces/ILiquidityValueCalculator.sol",
   "ast": {
     "absolutePath": "project:/contracts/interfaces/ILiquidityValueCalculator.sol",
     "exportedSymbols": {
       "ILiquidityValueCalculator": [
-        948
+        1118
       ]
     },
-    "id": 949,
+    "id": 1119,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 938,
+        "id": 1108,
         "literals": [
           "solidity",
           "^",
@@ -53,7 +53,7 @@
           ".6"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:5"
+        "src": "0:23:6"
       },
       {
         "abstract": false,
@@ -62,9 +62,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 948,
+        "id": 1118,
         "linearizedBaseContracts": [
-          948
+          1118
         ],
         "name": "ILiquidityValueCalculator",
         "nodeType": "ContractDefinition",
@@ -72,8 +72,8 @@
           {
             "body": null,
             "documentation": null,
-            "functionSelector": "88c342ea",
-            "id": 947,
+            "functionSelector": "56a8606a",
+            "id": 1117,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -81,18 +81,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 943,
+              "id": 1113,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 940,
+                  "id": 1110,
                   "mutability": "mutable",
-                  "name": "pairAddress",
+                  "name": "tokenA",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 947,
-                  "src": "90:19:5",
+                  "scope": 1117,
+                  "src": "90:14:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -100,10 +100,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 939,
+                    "id": 1109,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "90:7:5",
+                    "src": "90:7:6",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -115,48 +115,49 @@
                 },
                 {
                   "constant": false,
-                  "id": 942,
+                  "id": 1112,
                   "mutability": "mutable",
-                  "name": "amount",
+                  "name": "tokenB",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 947,
-                  "src": "111:11:5",
+                  "scope": 1117,
+                  "src": "106:14:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
                   },
                   "typeName": {
-                    "id": 941,
-                    "name": "uint",
+                    "id": 1111,
+                    "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "111:4:5",
+                    "src": "106:7:6",
+                    "stateMutability": "nonpayable",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
                     }
                   },
                   "value": null,
                   "visibility": "internal"
                 }
               ],
-              "src": "89:34:5"
+              "src": "89:32:6"
             },
             "returnParameters": {
-              "id": 946,
+              "id": 1116,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 945,
+                  "id": 1115,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 947,
-                  "src": "146:4:5",
+                  "scope": 1117,
+                  "src": "144:4:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -164,10 +165,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 944,
+                    "id": 1114,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "146:4:5",
+                    "src": "144:4:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -177,27 +178,27 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "145:6:5"
+              "src": "143:6:6"
             },
-            "scope": 948,
-            "src": "65:87:5",
+            "scope": 1118,
+            "src": "65:85:6",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 949,
-        "src": "25:129:5"
+        "scope": 1119,
+        "src": "25:127:6"
       }
     ],
-    "src": "0:154:5"
+    "src": "0:152:6"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "project:/contracts/interfaces/ILiquidityValueCalculator.sol",
       "exportedSymbols": {
         "ILiquidityValueCalculator": [
-          948
+          1118
         ]
       }
     },
@@ -211,9 +212,9 @@
             ".6"
           ]
         },
-        "id": 938,
+        "id": 1108,
         "name": "PragmaDirective",
-        "src": "0:23:5"
+        "src": "0:23:6"
       },
       {
         "attributes": {
@@ -228,17 +229,17 @@
           "documentation": null,
           "fullyImplemented": false,
           "linearizedBaseContracts": [
-            948
+            1118
           ],
           "name": "ILiquidityValueCalculator",
-          "scope": 949
+          "scope": 1119
         },
         "children": [
           {
             "attributes": {
               "body": null,
               "documentation": null,
-              "functionSelector": "88c342ea",
+              "functionSelector": "56a8606a",
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
@@ -247,7 +248,7 @@
               ],
               "name": "getPriceOfToken",
               "overrides": null,
-              "scope": 948,
+              "scope": 1118,
               "stateMutability": "view",
               "virtual": false,
               "visibility": "external"
@@ -259,9 +260,9 @@
                     "attributes": {
                       "constant": false,
                       "mutability": "mutable",
-                      "name": "pairAddress",
+                      "name": "tokenA",
                       "overrides": null,
-                      "scope": 947,
+                      "scope": 1117,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -275,47 +276,48 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 939,
+                        "id": 1109,
                         "name": "ElementaryTypeName",
-                        "src": "90:7:5"
+                        "src": "90:7:6"
                       }
                     ],
-                    "id": 940,
+                    "id": 1110,
                     "name": "VariableDeclaration",
-                    "src": "90:19:5"
+                    "src": "90:14:6"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "mutability": "mutable",
-                      "name": "amount",
+                      "name": "tokenB",
                       "overrides": null,
-                      "scope": 947,
+                      "scope": 1117,
                       "stateVariable": false,
                       "storageLocation": "default",
-                      "type": "uint256",
+                      "type": "address",
                       "value": null,
                       "visibility": "internal"
                     },
                     "children": [
                       {
                         "attributes": {
-                          "name": "uint",
-                          "type": "uint256"
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
                         },
-                        "id": 941,
+                        "id": 1111,
                         "name": "ElementaryTypeName",
-                        "src": "111:4:5"
+                        "src": "106:7:6"
                       }
                     ],
-                    "id": 942,
+                    "id": 1112,
                     "name": "VariableDeclaration",
-                    "src": "111:11:5"
+                    "src": "106:14:6"
                   }
                 ],
-                "id": 943,
+                "id": 1113,
                 "name": "ParameterList",
-                "src": "89:34:5"
+                "src": "89:32:6"
               },
               {
                 "children": [
@@ -325,7 +327,7 @@
                       "mutability": "mutable",
                       "name": "",
                       "overrides": null,
-                      "scope": 947,
+                      "scope": 1117,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -338,34 +340,34 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 944,
+                        "id": 1114,
                         "name": "ElementaryTypeName",
-                        "src": "146:4:5"
+                        "src": "144:4:6"
                       }
                     ],
-                    "id": 945,
+                    "id": 1115,
                     "name": "VariableDeclaration",
-                    "src": "146:4:5"
+                    "src": "144:4:6"
                   }
                 ],
-                "id": 946,
+                "id": 1116,
                 "name": "ParameterList",
-                "src": "145:6:5"
+                "src": "143:6:6"
               }
             ],
-            "id": 947,
+            "id": 1117,
             "name": "FunctionDefinition",
-            "src": "65:87:5"
+            "src": "65:85:6"
           }
         ],
-        "id": 948,
+        "id": 1118,
         "name": "ContractDefinition",
-        "src": "25:129:5"
+        "src": "25:127:6"
       }
     ],
-    "id": 949,
+    "id": 1119,
     "name": "SourceUnit",
-    "src": "0:154:5"
+    "src": "0:152:6"
   },
   "compiler": {
     "name": "solc",
@@ -373,7 +375,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-11-18T22:29:49.130Z",
+  "updatedAt": "2021-11-19T15:31:48.075Z",
   "devdoc": {
     "methods": {}
   },

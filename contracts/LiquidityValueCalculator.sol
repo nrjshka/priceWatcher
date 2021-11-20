@@ -2,8 +2,9 @@ pragma solidity ^0.6.6;
 
 import '@uniswap/v2-periphery/contracts/libraries/UniswapV2Library.sol';
 import '@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol';
+import '@uniswap/v2-core/contracts/interfaces/IUniswapV2ERC20.sol';
+import '@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol';
 
-import './interfaces/IERC20.sol';
 import './interfaces/ILiquidityValueCalculator.sol';
 
 contract LiquidityValueCalculator is ILiquidityValueCalculator {
@@ -13,15 +14,20 @@ contract LiquidityValueCalculator is ILiquidityValueCalculator {
     factory = factory_;
   }
 
-  function getPriceOfToken(address pairAddress, uint amount) external override view returns(uint) {
-    // IUniswapV2Pair pair = IUniswapV2Pair(pairAddress);
-    // IERC20 token1 = IERC20(pair.token1());
+  function getPriceOfToken(address tokenA, address tokenB) external override view returns(uint) {
+    address pair = IUniswapV2Factory(factory).getPair(tokenA, tokenB);
+    (uint left, uint right,) = IUniswapV2Pair(pair).getReserves();
+    (uint tokenReserves, uint ethReserves) = (tokenA < tokenB) ?
+        (left, right) : (right, left);
+    return (ethReserves * 1000000) / tokenReserves;
+  }
 
-    // (uint Res0, uint Res1,) = pair.getReserves();
+  function pairInfo(address tokenA, address tokenB) external view returns (uint reserveA, uint reserveB, uint totalSupply) {
+    IUniswapV2Pair pair = IUniswapV2Pair(UniswapV2Library.pairFor(factory, tokenA, tokenB));
+    totalSupply = pair.totalSupply();
+    (uint reserves0, uint reserves1,) = pair.getReserves();
+    (reserveA, reserveB) = tokenA == pair.token0() ? (reserves0, reserves1) : (reserves1, reserves0);
 
-    // uint res0 = Res0 * (10 ** 18);
-
-    // return (amount * res0) / Res1;
-    return 0;
+    return (reserveA, reserveB, totalSupply);
   }
 }
