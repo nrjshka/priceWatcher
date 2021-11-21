@@ -1,7 +1,17 @@
-import React from "react";
+import React from 'react'
+import { Main } from '..'
+
+import styles from './App.module.css'
 
 const App = () => {
-  return null
+  return (
+    <div className={styles.App}>
+      <header></header>
+      <main>
+        <Main />
+      </main>
+    </div>
+  )
 }
 
 export { App }
