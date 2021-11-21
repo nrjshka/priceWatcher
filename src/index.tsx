@@ -6,6 +6,10 @@ import './normalize.css'
 
 import { App } from './pages'
 
+import { initializeApp, store } from 'state'
+
+store.dispatch(initializeApp())
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
