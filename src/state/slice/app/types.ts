@@ -1,5 +1,6 @@
 type AppStoreType = {
   isLoading: boolean
+  isWeb3Connected: boolean
 }
 
 enum AppActionTypes {
